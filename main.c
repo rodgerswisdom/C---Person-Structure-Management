@@ -55,6 +55,14 @@ int main( int argc, char *argv[] )
     printf("\nMemory of P2 is at: %p\n", P2);
     Person_Print( P2 );
 
+    struct Person *P3 = Person_Create("Rodgers Hawona", 21, 67, 61);
+    printf("\nMemory of P3 is at: %p\n", P3);
+    Person_Print( P3 );
+
+    Person_Destroy(P1);
+    Person_Destroy(P2);
+    Person_Destroy(P3);
+
 
     return (0);
 }
