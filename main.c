@@ -40,6 +40,9 @@ void Person_Print(struct Person *who )
     assert( who != NULL);
 
     printf("Name: %s", who->name );
+    printf("Age: %s", who->age );
+    printf("Height: %s", who->height );
+    printf("Width: %s", who->width );
 }
 
 
