@@ -84,8 +84,5 @@ Width: 80
 - The `assert` function is used to ensure that memory allocation is successful.
 - After manipulating the data of a `Person` instance, the updated details are printed.
 - All `Person` instances are properly destroyed to avoid memory leaks.
-
-Feel free to modify and extend the program as needed.
 ```
 
-This `README.md` provides a comprehensive overview of the program, including its purpose, functionality, and instructions on how to compile and run it.
