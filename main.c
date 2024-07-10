@@ -20,9 +20,9 @@ struct Person *Person_Create(char *name,int age,int height,int weight)
     assert( who != NULL);
 
     who->name = strdup(name);
-    who->age;
-    who->height;
-    who->weight;
+    who->age = age;
+    who->height = height;
+    who->weight = weight;
 
     return(who);
 };
