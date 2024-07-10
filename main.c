@@ -39,7 +39,7 @@ void Person_Print(struct Person *who )
 {
     assert( who != NULL);
 
-    printf("Name: %s\n", who->name );
+    printf("\nName: %s\n", who->name );
     printf("Age: %d\n", who->age );
     printf("Height: %d\n", who->height );
     printf("Width: %d\n", who->weight );
@@ -48,7 +48,7 @@ void Person_Print(struct Person *who )
 int main( int argc, char *argv[] )
 {
     struct Person *P1 = Person_Create("Robert Odhiambo", 21, 61, 60);
-    printf("Memory of P1 is at: %p\n", P1);
+    printf("\nMemory of P1 is at: %p\n", P1);
     Person_Print( P1 );
 
     struct Person *P2 = Person_Create("Ridan Hawy", 21, 64, 55);
@@ -58,6 +58,12 @@ int main( int argc, char *argv[] )
     struct Person *P3 = Person_Create("Rodgers Hawona", 21, 67, 61);
     printf("\nMemory of P3 is at: %p\n", P3);
     Person_Print( P3 );
+
+    // manipulate data in Strutures
+    P1->age += 20;
+    P1->height += 20;
+    P1->weight += 20;
+    Person_Print( P1 );
 
     Person_Destroy(P1);
     Person_Destroy(P2);
