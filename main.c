@@ -27,7 +27,14 @@ struct Person *Person_Create(int *name,int age,int height,int weight)
     return(who);
 };
 
-void Person_Destroy(struct Person *who );
+void Person_Destroy(struct Person *who )
+{
+    assert( who != NULL);
+
+    free( who -> name );
+    free( who );
+}
+
 void Person_Print(struct Person *who );
 
 
