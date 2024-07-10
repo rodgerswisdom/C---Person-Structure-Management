@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1720600397 source:/home/trulyhawona/Projects/ALX/Structures/main.c
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<stdlib.h>
+	"main.h"
+
+1720600096 /home/trulyhawona/Projects/ALX/Structures/main.h
+

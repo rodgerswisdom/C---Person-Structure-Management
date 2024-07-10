@@ -39,15 +39,18 @@ void Person_Print(struct Person *who )
 {
     assert( who != NULL);
 
-    printf("Name: %s", who->name );
-    printf("Age: %d", who->age );
-    printf("Height: %d", who->height );
-    printf("Width: %d", who->weight );
+    printf("Name: %s\n", who->name );
+    printf("Age: %d\n", who->age );
+    printf("Height: %d\n", who->height );
+    printf("Width: %d\n", who->weight );
 }
 
 int main( int argc, char *argv[] )
 {
-    printf("Hello");
+    struct Person *P1 = Person_Create("Robert Odhiambo", 21, 61, 60);
+    printf("Memory of P1 is at: %p\n", P1);
+    Person_Print( P1 );
+
 
     return (0);
 }
